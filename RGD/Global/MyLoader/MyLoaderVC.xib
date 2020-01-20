@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyLoaderVC" customModule="GreenSport" customModuleProvider="target">
+            <connections>
+                <outlet property="btnDismis" destination="mlU-Wo-aQT" id="nDK-ed-GJf"/>
+                <outlet property="imgVW" destination="zdn-Aw-8HS" id="Lvw-yw-Zfw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwBG" destination="hUB-zd-6Lq" id="vNP-lD-g5t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hUB-zd-6Lq" customClass="MyView" customModule="GreenSport" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlU-Wo-aQT" customClass="MyButton" customModule="GreenSport" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zdn-Aw-8HS">
+                    <rect key="frame" x="10" y="134" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="1Kj-Pe-uEK"/>
+                        <constraint firstAttribute="width" constant="300" id="fWK-Fs-bbp"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zdn-Aw-8HS" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5ZO-3p-odj"/>
+                <constraint firstItem="mlU-Wo-aQT" firstAttribute="top" secondItem="hUB-zd-6Lq" secondAttribute="top" id="H2b-PU-2me"/>
+                <constraint firstAttribute="trailing" secondItem="hUB-zd-6Lq" secondAttribute="trailing" id="Wpc-cb-fcB"/>
+                <constraint firstAttribute="bottom" secondItem="hUB-zd-6Lq" secondAttribute="bottom" id="YpE-7p-CpK"/>
+                <constraint firstItem="mlU-Wo-aQT" firstAttribute="trailing" secondItem="hUB-zd-6Lq" secondAttribute="trailing" id="c39-0q-pJK"/>
+                <constraint firstItem="hUB-zd-6Lq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ho4-Xe-Mqs"/>
+                <constraint firstItem="hUB-zd-6Lq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lpE-HR-n5q"/>
+                <constraint firstItem="zdn-Aw-8HS" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ssM-dP-VeQ"/>
+                <constraint firstItem="mlU-Wo-aQT" firstAttribute="bottom" secondItem="hUB-zd-6Lq" secondAttribute="bottom" id="uvQ-me-KCM"/>
+                <constraint firstItem="mlU-Wo-aQT" firstAttribute="leading" secondItem="hUB-zd-6Lq" secondAttribute="leading" id="vVJ-R9-79r"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,4 @@
+target 'HelloMap' do
+    platform :ios, '10.0'
+    pod 'HEREMaps', '>= 3.13'
+end
